@@ -3,7 +3,33 @@ entries:
   kubesentry:
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2026-07-22T17:25:47.275371814+02:00"
+    created: "2026-07-22T19:26:14.386832313+02:00"
+    dependencies:
+    - condition: falco.enabled
+      name: falco
+      repository: https://falcosecurity.github.io/charts
+      version: 4.x.x
+    description: Self-hosted Kubernetes threat detection
+    digest: aabf4a9f2010b1f1083a9114e825a72aef9c37d8809990ed1464b9052e6c662d
+    home: https://kubesentry.io
+    keywords:
+    - kubernetes
+    - security
+    - falco
+    - threat-detection
+    maintainers:
+    - name: Dimitar
+      url: https://kubesentry.io
+    name: kubesentry
+    sources:
+    - https://github.com/kubesentry/kubesentry-collector
+    type: application
+    urls:
+    - https://charts.kubesentry.io/kubesentry-0.8.3.tgz
+    version: 0.8.3
+  - apiVersion: v2
+    appVersion: 0.8.1
+    created: "2026-07-22T19:26:14.379199515+02:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -29,7 +55,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2026-07-22T17:25:47.268945926+02:00"
+    created: "2026-07-22T19:26:14.372245844+02:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -55,7 +81,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2026-07-22T17:25:47.261615164+02:00"
+    created: "2026-07-22T19:26:14.366067483+02:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -81,7 +107,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2026-07-22T17:25:47.254987546+02:00"
+    created: "2026-07-22T19:26:14.358048011+02:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -105,4 +131,4 @@ entries:
     urls:
     - https://charts.kubesentry.io/kubesentry-0.7.0.tgz
     version: 0.7.0
-generated: "2026-07-22T17:25:47.239405066+02:00"
+generated: "2026-07-22T19:26:14.350897668+02:00"
